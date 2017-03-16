@@ -155,6 +155,11 @@ namespace OpenTrack
             return SubmitRequest<AddRepairOrderLinesResponse>(query);
         }
 
+        public DeleteRepairOrderLinesResponse DeleteRepairOrderLines(Requests.DeleteRepairOrderLinesRequest query)
+        {
+            return GetROService().DeleteRepairOrderLines(query.Dealer, query.Request);
+        }
+
         public CustomerSearchResponse FindCustomers(CustomerSearchRequest query)
         {
             return SubmitRequest<CustomerSearchResponse>(query);

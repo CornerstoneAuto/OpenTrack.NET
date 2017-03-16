@@ -4,6 +4,7 @@ using OpenTrack.Requests;
 using OpenTrack.Responses;
 using System;
 using System.Collections.Generic;
+using OpenTrack.ServiceAPI;
 using GetClosedRepairOrdersRequest = OpenTrack.Requests.GetClosedRepairOrdersRequest;
 using UpdateRepairOrderLinesRequest = OpenTrack.Requests.UpdateRepairOrderLinesRequest;
 using VehicleLookupResponseVehicle = OpenTrack.Responses.VehicleLookupResponseVehicle;
@@ -62,7 +63,11 @@ namespace OpenTrack
         /// Add repair order lines to an existing repair order.
         /// </summary>
         AddRepairOrderLinesResponse AddRepairOrderLines(AddRepairOrderLinesRequest query);
-
+        /// <summary>
+        /// This method will delete repair order lines on an existing repair order that do not have part lines. 
+        /// You can also delete part lines via their part number but this must be done in a separate call from deleting the line itself.
+        /// </summary>
+        DeleteRepairOrderLinesResponse DeleteRepairOrderLines(Requests.DeleteRepairOrderLinesRequest query);
         /// <summary>
         /// Find a list of customers matching the given criteria.
         /// </summary>

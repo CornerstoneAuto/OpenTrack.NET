@@ -52,6 +52,7 @@
     <Compile Include="AddRepairOrder.cs" />
     <Compile Include="AppointmentTests.cs" />
     <Compile Include="CustomerAdd.cs" />
+    <Compile Include="DeleteRepairOrderLinesTest.cs" />
     <Compile Include="GetClosedRepairOrders.cs" />
     <Compile Include="GetPartsTransactions.cs" />
     <Compile Include="PartAdd.cs" />

@@ -92,6 +92,7 @@
     <Compile Include="Requests\AddRepairOrderRequest.cs" />
     <Compile Include="Requests\AppointmentLookupRequest.cs" />
     <Compile Include="Requests\AppointmentAddRequest.cs" />
+    <Compile Include="Requests\DeleteRepairOrderLinesRequest.cs" />
     <Compile Include="Requests\GetClosedRepairOrderDetailsRequest.cs" />
     <Compile Include="Requests\GetClosedRepairOrdersRequest.cs" />
     <Compile Include="Requests\PartsPricingLookupRequest.cs" />
